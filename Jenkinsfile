@@ -1,5 +1,5 @@
 pipeline {
-    agent go-slave
+    agent any
 
     environment {
         APP_ENV = 'development'
