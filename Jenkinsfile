@@ -49,6 +49,7 @@ pipeline {
                 branch 'main'
             }
             steps {
+                input message: 'Deploy to Production?', ok: 'Yes'
                 echo "🚀 Deploying to PRODUCTION from branch: ${env.BRANCH_NAME}"
                 // your production deploy logic here
             }
